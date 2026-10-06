@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #faf9f6; /* Fondo claro orgánico */
+    color: #2d312e;            /* Texto oscuro */
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: #6b8e23; /* Verde salvia / oliva */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #55721a;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==========================================
+   ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #faf9f6;
+    border-bottom: 1px solid #e2ded4;
+    transition: all 0.3s ease;
+}
+
+.navegacion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2d312e;
+}
+
+.menu {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+.menu a {
+    color: #5c635e;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #6b8e23;
+}
+
+/* Botón de cambio de tema */
+.tema-toggle,
+.menu-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #2d312e;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* ==========================================
+   SECCIÓN PRESENTACIÓN (HERO)
+   ========================================== */
+.presentacion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.saludo {
+    color: #6b8e23;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.presentacion h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.presentacion h2 {
+    font-size: 1.3rem;
+    color: #5c635e;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.frase {
+    font-style: italic;
+    color: #5c635e;
+    border-left: 3px solid #6b8e23;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.presentacion-texto {
+    margin-bottom: 2rem;
+    color: #5c635e;
+}
+
+/* Botón principal */
+.boton {
+    display: inline-block;
+    background-color: #6b8e23;
+    color: #ffffff !important;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #55721a;
+}
+
+.presentacion-imagen img {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 420px;
+    border: 1px solid #e2ded4;
+}
+
+/* ==========================================
+   SECCIONES GENERALES Y TARJETAS
+   ========================================== */
+.seccion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.descripcion-seccion {
+    color: #5c635e;
+    margin-bottom: 2.5rem;
+}
+
+/* Tarjetas de Proyectos */
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-proyecto {
+    background-color: #ffffff;
+    border: 1px solid #e2ded4;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto-contenido {
+    padding: 1.5rem;
+}
+
+.proyecto-contenido h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.proyecto-contenido p {
+    color: #5c635e;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.tecnologias {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #6b8e23;
+}
+
+/* Habilidades y Formación */
+.contenedor-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.tarjeta-habilidad {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #e2ded4;
+}
+
+.tarjeta-habilidad h3 {
+    margin-bottom: 1rem;
+    color: #6b8e23;
+}
+
+.tarjeta-habilidad li {
+    padding: 0.4rem 0;
+    color: #5c635e;
+    border-bottom: 1px dashed #e2ded4;
+}
+
+.elemento-formacion {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 4px solid #6b8e23;
+    border-top: 1px solid #e2ded4;
+    border-right: 1px solid #e2ded4;
+    border-bottom: 1px solid #e2ded4;
+}
+
+/* Formulario */
+#formulario-contacto {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #e2ded4;
+    margin-bottom: 2rem;
+}
+
+.campo {
+    margin-bottom: 1.2rem;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e2ded4;
+    border-radius: 8px;
+    background-color: #faf9f6;
+    color: #2d312e;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #6b8e23;
+}
+
+.pie-pagina {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background-color: #f0ede6;
+    color: #5c635e;
+    margin-top: 4rem;
+    border-top: 1px solid #e2ded4;
+}
+
+/* ==========================================
+   MODO OSCURO (SIMPLE)
+   Se activa cuando el <body> tiene la clase "modo-oscuro"
+   ========================================== */
+body.modo-oscuro {
+    background-color: #121513;
+    color: #e8ebe6;
+}
+
+body.modo-oscuro .encabezado {
+    background-color: #121513;
+    border-bottom-color: #2e3530;
+}
+
+body.modo-oscuro .logo,
+body.modo-oscuro .tema-toggle,
+body.modo-oscuro .menu-toggle {
+    color: #e8ebe6;
+}
+
+body.modo-oscuro .menu a,
+body.modo-oscuro .presentacion h2,
+body.modo-oscuro .frase,
+body.modo-oscuro .presentacion-texto,
+body.modo-oscuro .descripcion-seccion,
+body.modo-oscuro .proyecto-contenido p,
+body.modo-oscuro .tarjeta-habilidad li,
+body.modo-oscuro .elemento-formacion p,
+body.modo-oscuro .datos-contacto p {
+    color: #a3aca4;
+}
+
+body.modo-oscuro .tarjeta-proyecto,
+body.modo-oscuro .tarjeta-habilidad,
+body.modo-oscuro .elemento-formacion,
+body.modo-oscuro #formulario-contacto {
+    background-color: #1a1e1b;
+    border-color: #2e3530;
+}
+
+body.modo-oscuro .campo input,
+body.modo-oscuro .campo textarea {
+    background-color: #121513;
+    color: #e8ebe6;
+    border-color: #2e3530;
+}
+
+body.modo-oscuro .pie-pagina {
+    background-color: #1a1e1b;
+    border-top-color: #2e3530;
+    color: #a3aca4;
+}
+
+/* ==========================================
+   RESPONSIVE (PANTALLAS MÓVILES)
+   ========================================== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 1.5rem;
+        border-bottom: 1px solid #e2ded4;
+    }
+
+    body.modo-oscuro .menu {
+        background-color: #1a1e1b;
+        border-bottom-color: #2e3530;
+    }
+
+    .menu.activo {
+        display: flex;
+    }
+
+    .presentacion {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .frase {
+        border-left: none;
+        border-top: 2px solid #6b8e23;
+        padding-left: 0;
+        padding-top: 0.8rem;
+    }
+
+    .presentacion-imagen {
+        order: -1;
+    }
+}

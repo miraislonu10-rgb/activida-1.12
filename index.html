@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Mía Iraís, estudiante técnico en computación.">
+    <title>Portafolio | Mía Iraís</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <nav class="navegacion" aria-label="Navegación principal">
+
+            <a href="#inicio" class="logo">Mía Iraís</a>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                    aria-controls="menu">
+                
+            </button>
+
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+           <button id="toggle-tema" class="tema-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="presentacion">
+            <div class="presentacion-contenido">
+
+                <p class="saludo">¡Hola! Soy</p>
+
+                <h1>Mía Iraís</h1>
+
+                <h2>Estudiante técnico en computación</h2>
+
+                <p class="frase">
+                    "Cada línea de código es una oportunidad para aprender,
+                    crear y transformar ideas en soluciones."
+                </p>
+
+                <p class="presentacion-texto">
+                    Me interesa el mundo de la tecnología y la programación.
+                    Disfruto aprender cosas nuevas y desarrollar proyectos
+                    que me permitan mejorar mis habilidades.
+                </p>
+
+                <a href="#proyectos" class="boton">
+                    Conoce mis proyectos
+                </a>
+
+            </div>
+
+            <div class="presentacion-imagen">
+
+                <img src="images/mia.jpg" alt="Fotografía de Mía Iraís">
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Soy Mía Iraís, estudiante técnico en computación.
+                Me gusta el dibujo, tocar la guitarra, pintar.
+                Me gustaría ser ingeniera en Sistemas Computacionales.
+            </p>
+
+            <p>
+                Me gusta trabajar en proyectos escolares, 
+                experimentar con nuevas ideas
+                y seguir mejorando mis habilidades.
+            </p>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="seccion proyectos">
+            <h2>Mis proyectos</h2>
+
+            <p class="descripcion-seccion">
+                Estos son algunos proyectos e ideas que han formado
+                parte de mi aprendizaje.
+            </p>
+
+            <div class="contenedor-proyectos">
+
+                <article class="tarjeta-proyecto">
+                    <img src="images/proyecto.jpg"
+                         alt="Proyecto de recolección de basura">
+
+                    <div class="proyecto-contenido">
+                        <h3>Recolector de basura automatizado</h3>
+
+                        <p>
+                            Idea de proyecto escolar que busca utilizar
+                            Arduino para desarrollar un sistema que ayude
+                            a automatizar la recolección de residuos.
+                        </p>
+
+                        <p class="tecnologias">
+                            Tecnologías: Arduino y electrónica.
+                        </p>
+
+                        <span class="estado-proyecto">
+                            Proyecto Aula 4to semestre
+                        </span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="images/java.png"
+                         alt="Proyecto de gimansio en Java">
+
+                    <div class="proyecto-contenido">
+                        <h3>Administración de gimnasio</h3>
+
+                        <p>
+                            Programa desarrollado en Java como práctica
+                            escolar para representar funciones básicas
+                            de administración de un gimnasio.
+                        </p>
+
+                        <p class="tecnologias">
+                            Tecnología: Java.
+                        </p>
+
+                        <span class="estado-proyecto">
+                            Proyecto de 3er semestre
+                        </span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="images/pagina.png"
+                         alt="Actividad 1.12">
+
+                    <div class="proyecto-contenido">
+                        <h3>Mi portafolio web</h3>
+
+                        <p>
+                            Sitio web académico creado para presentar
+                            mi perfil, mis habilidades y los proyectos
+                            que he realizado durante mi formación.
+                        </p>
+
+                        <p class="tecnologias">
+                            Tecnologías: HTML, CSS y JavaScript.
+                        </p>
+
+                        <span class="estado-proyecto">
+                            En desarrollo
+                        </span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion habilidades">
+            <h2>Mis habilidades</h2>
+
+            <p class="descripcion-seccion">
+                Conocimientos y herramientas que estoy aprendiendo
+                y practicando durante mi formación.
+            </p>
+
+            <div class="contenedor-habilidades">
+
+                <article class="tarjeta-habilidad">
+                    <h3>Desarrollo web</h3>
+                    <ul>
+                        <li>HTML básico</li>
+                        <li>CSS básico</li>
+                        <li>JavaScript básico</li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta-habilidad">
+                    <h3>Programación</h3>
+                    <ul>
+                        <li>Fundamentos de Java</li>
+                        <li>Lógica de programación</li>
+                        <li>Resolución de problemas</li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta-habilidad">
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>GitHub</li>
+                        <li>Arduino (exploración)</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="formacion" class="seccion formacion">
+            <h2>Formación académica</h2>
+
+            <article class="elemento-formacion">
+                <h3>Estudios técnicos en computación</h3>
+
+                <p>
+                    Actualmente curso mi formación técnica en computación,
+                    donde desarrollo conocimientos sobre programación,
+                    diseño web y tecnología.
+                </p>
+
+                <span>En curso</span>
+            </article>
+        </section>
+
+        <section id="contacto" class="seccion contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                ¿Te interesa conocer más sobre mis proyectos?
+                Puedes escribirme mediante el siguiente formulario.
+            </p>
+
+            <form id="formulario-contacto">
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text"
+                           id="nombre"
+                           name="nombre"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email"
+                           id="correo"
+                           name="correo"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje"
+                              name="mensaje"
+                              rows="5"
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="boton">
+                    Enviar mensaje
+                </button>
+
+                <p id="respuesta-formulario" role="status" aria-live="polite"></p>
+
+            </form>
+
+            <div class="datos-contacto">
+                <p>
+                    Correo:
+                    <a href="mailto:mia@gmail.com">miairais.lonu09@gmail.com</a>
+                </p>
+
+                <p>
+                    GitHub:
+                    <a href="https://github.com/miraislonu10-rgb"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Mi perfil de GitHub
+                    </a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>
+            & 2026 Mía Iraís. Portafolio académico.
+        </p>
+
+        <p>
+            Diseñado y desarrollado como proyecto de aprendizaje.
+        </p>
+    </footer>
+
+</body>
+</html>
